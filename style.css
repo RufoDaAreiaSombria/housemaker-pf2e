@@ -1,0 +1,304 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'pf';
+    src: url('fontes/TarocaRegular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'maior';
+    src: url('fontes/GinTest-Regular.otf') format('truetype');
+}
+@font-face {
+    font-family: 'menor';
+    src: url('fontes/Sabon.ttf') format('truetype');
+}
+
+:root {
+    --verdeclaro: #c4f1be;
+    --verdescuro: #507255;
+    --laranja: #fca311;
+    --marrompf: #522e2c;
+    --verdeclaro-t: rgba(196, 241, 190, 0.7);
+    --verdescuro-t: rgba(80, 114, 85, 0.7);
+    --laranja-t: rgba(252, 163, 17, 0.7);
+    --marrompf-t: rgba(82, 46, 44, 0.7);
+}
+
+body {
+    background-image: url('imagens/bg-esmeralda.png');
+    background-size: cover;
+    background-color: var(--verdeclaro);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    padding: 7px;
+    margin: 0 auto;
+}
+
+header, section#titulocassino {
+    font-family: 'pf';
+    color: var(--marrompf);
+    text-shadow: 
+    1px 1px 0 var(--laranja),   /* Sombra para baixo-direita */
+    -1px -1px 0 var(--laranja),  /* Sombra para cima-esquerda */
+    1px -1px 0 var(--laranja),   /* Sombra para cima-direita */
+    -1px 1px 0 var(--laranja);   /* Sombra para baixo-esquerda */
+    background-color: var(--verdeclaro);
+    border: 3px solid var(--marrompf);
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.404);
+    text-align: center;
+    width: 600px;
+    max-width: 90%;
+    margin: 22px auto;
+}
+
+.menu {
+
+}
+
+.aside {
+    display: flex;
+}
+
+aside {
+    width: 56px;
+    height: 624px;
+    background-color: var(--verdescuro);
+    border: 5px solid var(--marrompf);
+    
+}
+
+aside input {
+    display: none;
+}
+
+.titulos {
+    width: 155px;
+    font-size: 25px;
+    color: #e3e3e3;
+    border-left: none;
+}
+
+.titulos p {
+    font-family: 'maior';
+    padding: 7px 5px 13px 5px;
+    border: 3px solid #e3e3e3;
+    box-sizing: border-box;
+}
+
+.p1 {
+    margin: 0px;
+}
+
+.p2, .p4, .p3 {
+    margin: 4px 0px 4px 0px;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border: 3px solid #e3e3e3;
+}
+
+.aside section {
+    border: 5px solid var(--marrompf);
+    border-left: none;
+    background-color: var(--verdescuro-t);
+    width: 622px;
+    height: 624px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.aside section.inicio {
+    display: flex;
+}
+
+.inicio2, .nivel2, .formfactor2, .feats2, .rooms2 {
+    text-align: center;
+    font-family: 'maior';
+    background-color: var(--verdeclaro-t);
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
+}
+
+.inicio2 h2, .inicio2 h3, .nivel2 h2, .formfactor2 h2 {
+    color: var(--marrompf);
+    text-shadow: 
+    1px 1px 0 var(--verdeclaro),   /* Sombra para baixo-direita */
+    -1px -1px 0 var(--verdeclaro),  /* Sombra para cima-esquerda */
+    1px -1px 0 var(--verdeclaro),   /* Sombra para cima-direita */
+    -1px 1px 0 var(--verdeclaro);   /* Sombra para baixo-esquerda */
+    font-size: 1.5em;
+}
+
+.inicio2 h2 {
+    padding-top: 50px;
+    margin-top: 0px;
+}
+
+.inicio2 h3 {
+    padding: 0px 8px 0px 8px;
+    padding-top: 150px;
+}
+
+.inicio2 p {
+    font-family: 'menor';
+    font-size: 1.3em;
+}
+
+.nivel2 {
+    display: grid;
+    grid-template-columns: repeat(5, 45px);
+    grid-template-rows: auto repeat(4, 45px);
+    justify-content: center;
+    align-content: start;
+    font-family: 'maior';
+    background-color: var(--verdeclaro-t);
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
+}
+
+.nivel2 input {
+    display: none;
+}
+
+.nivel2 label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 45px;
+    font-family: 'maior';
+    font-size: 1.2em;
+    border: 2px solid var(--marrompf);
+    cursor: pointer;
+    background-color: var(--verdeclaro);
+    transition: 0.2s;
+    width: 45px;
+    color: var(--marrompf);
+    font-size: 1.5em;
+}
+
+.nivel2 h2 {
+    grid-column: 1 / -1; /* ocupa todas as colunas */
+    margin-bottom: 50px;
+    margin-top: 80px;
+    font-size: 2em;
+}
+
+.formfactor2 {
+    text-align: left;
+}
+
+.formfactor2 h2 {
+    text-align: center;
+    font-size: 2em;
+}
+
+.formfactor2 input {
+    display: none;
+}
+
+.tipocasa {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    height: 40px;
+}
+
+label span {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid var(--marrompf);
+    margin-left: 10px;
+}
+
+.formfactor2 p {
+    font-family: 'menor';
+    margin: 0;
+    padding-left: 50px;
+}
+
+.formfactor2 h3 {
+    color: var(--marrompf);
+    font-size: 1.5em;
+}
+
+.example {
+
+}
+
+footer {
+
+}
+
+.aside:has(#nivel:checked) label[for="nivel"] .icon,
+.aside:has(#formfactor:checked) label[for="formfactor"] .icon,
+.aside:has(#feats:checked) label[for="feats"] .icon,
+.aside:has(#rooms:checked) label[for="rooms"] .icon {
+    border-color: var(--laranja);
+    background-color: rgba(255,255,255,0.15); 
+}
+
+.aside:has(#nivel:checked) .p1,
+.aside:has(#formfactor:checked) .p2,
+.aside:has(#feats:checked) .p3,
+.aside:has(#rooms:checked) .p4 {
+    border-color: var(--laranja);
+    background-color: rgba(255,255,255,0.15);
+    color: var(--verdeclaro);
+}
+
+.aside:has(
+    #nivel:checked,
+    #formfactor:checked,
+    #feats:checked,
+    #rooms:checked
+) section.inicio {
+    display: none;
+}
+
+.aside:has(#nivel:checked) section.nivel,
+.aside:has(#formfactor:checked) section.formfactor,
+.aside:has(#feats:checked) section.feats,
+.aside:has(#rooms:checked) section.rooms {
+    display: flex;
+}
+
+.nivel2 label:hover {
+    background-color: var(--laranja);
+    color: var(--marrompf);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 0 var(--marrompf);
+}
+
+.nivel2 input:checked + label {
+    background-color: var(--verdescuro);
+    color: var(--verdeclaro);
+    border-color: var(--laranja);
+    box-shadow: 0 0 10px var(--laranja);
+    transform: scale(1.1);
+}
+
+.formfactor2 span:hover {
+    background-color: var(--laranja);
+    transform: translateY(-3px) scale(1.05);
+    box-shadow: 0 6px 0 var(--marrompf);
+}
+
+label input:checked + .casamarcada {
+    background-color: var(--verdescuro);
+    color: var(--verdeclaro);
+    border-color: var(--laranja);
+    box-shadow: 0 0 10px var(--laranja);
+    transform: scale(1.1);
+}
