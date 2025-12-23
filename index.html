@@ -11,6 +11,7 @@
     <header>
         <h1>Casinhas PF2e</h1>
     </header>
+    <div class="encapsulamento">
     <div class="menu">
         <div class="aside">
             <aside>
@@ -85,38 +86,38 @@
             <section class="formfactor">
                 <div class="formfactor2">
                     <h2>Tipo da Casa</h2>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="caravan">
+                    <label for="caravan" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Caravan</h3>
                     </label>
                     <p>Construída para viajar, constituida de vagões, navios ou até de pessoas com barracas. Literalmente uma casa que anda</p>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="donjon">
+                    <label for="donjon" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Donjon</h3>
                     </label>
                     <p>Casa reforçada para defesa, como um castelo ou fortaleza. Focada em defesa de cerco e tropas</p>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="enclave">
+                    <label for="enclave" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Enclave</h3>
                     </label>
                     <p>Várias estruturas agrupadas em algo singular. Ótimo para Acess Amenities e interações</p>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="guildhall">
+                    <label for="guildhall" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Guild Hall</h3>
                     </label>
                     <p>Grande estrutura feita para muitas pessoas e quartos. Bom negócio para renda e Downtime</p>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="refuge">
+                    <label for="refuge" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Refuge</h3>
                     </label>
                     <p>Discreto e escondido. É a escolha para coisas secretas e escusas. Pode ser movido com tempo</p>
-                    <label class="tipocasa">
                     <input type="radio" name="tipodacasa" id="sanctuary">
+                    <label for="sanctuary" class="tipocasa">
                     <span class="casamarcada"></span>
                     <h3>Sanctuary</h3>
                     </label>
@@ -273,7 +274,7 @@
                     <input type="checkbox" name="planar" id="planar">
                     <label for="planar"><span class="featmarcado"></span>
                     <h3>Planar Lodging</h3></label>
-                    <p class="planar">Camufla pessoas entrando e cria servos</p>
+                    <p class="planar">Camufla a porta da casa e cria servos</p>
                     <input type="checkbox" name="strenghtthousands" id="strenghtthousands">
                     <label for="strenghtthousands"><span class="featmarcado"></span>
                     <h3>The Strenght of Thousands</h3></label>
@@ -287,14 +288,550 @@
             </section>
             <section class="rooms">
                 <div class="rooms2">
-
+                    <h2>Quartos das Casas</h2>
+                    <input type="checkbox" name="airship" id="airship">
+                    <label for="airship"><span class="quartomarcado"></span>
+                    <h3>Airship Dock</h3></label>
+                    <p class="airship">1000 PO. Lugar pra guardar veículos voadores</p>
+                    <input type="radio" name="alchemist" id="alchemist1">
+                    <label for="alchemist1"><span class="quartomarcado"></span>
+                    <h3>Alchemist's Laboratory</h3></label>
+                    <p class="alchemist1">80 PO. +1 em craftar alquímicos e itens alquímicos de graça</p>
+                    <input type="radio" name="alchemist" id="alchemist2">
+                    <label for="alchemist2"><span class="quartomarcado"></span>
+                    <h3>Alchemist's Laboratory (Sophisticated)</h3></label>
+                    <p class="alchemist2">850 PO. +2 em craftar alquímicos e itens alquímicos de graça</p>
+                    <input type="radio" name="apothecary" id="apothecary1">
+                    <label for="apothecary1"><span class="quartomarcado"></span>
+                    <h3>Apothecary</h3></label>
+                    <p class="apothecary1">45 PO. +1 em Natureza pra cura e alquímicos de cura de graça</p>
+                    <input type="radio" name="apothecary" id="apothecary2">
+                    <label for="apothecary2"><span class="quartomarcado"></span>
+                    <h3>Apothecary (Grand)</h3></label>
+                    <p class="apothecary2">600 PO. +2 em Natureza pra cura e alquímicos de cura de graça</p>
+                    <input type="checkbox" name="archive" id="archive">
+                    <label for="archive"><span class="quartomarcado"></span>
+                    <h3>Archive</h3></label>
+                    <p class="archive">45 PO. Itens produzidos por outros quartos podem ser da fórmula que você tiver, ignorando raridade</p>
+                    <input type="radio" name="armory" id="armory1">
+                    <label for="armory1"><span class="quartomarcado"></span>
+                    <h3>Armory</h3></label>
+                    <p class="armory1">1000 PO. +1 de bônus pra tropas combatentes</p>
+                    <input type="radio" name="armory" id="armory2">
+                    <label for="armory2"><span class="quartomarcado"></span>
+                    <h3>Armory (Masterwork)</h3></label>
+                    <p class="armory2">10000 PO. +2 de bônus pra tropas combatentes</p>
+                    <input type="radio" name="atrium" id="atrium1">
+                    <label for="atrium1"><span class="quartomarcado"></span>
+                    <h3>Atrium</h3></label>
+                    <p class="atrium1">200 PO. +1 de bônus social contra convidados</p>
+                    <input type="radio" name="atrium" id="atrium2">
+                    <label for="atrium2"><span class="quartomarcado"></span>
+                    <h3>Atrium (Grand)</h3></label>
+                    <p class="atrium2">1200 PO. +2 de bônus social contra convidados</p>
+                    <input type="checkbox" name="auction" id="auction">
+                    <label for="auction"><span class="quartomarcado"></span>
+                    <h3>Auction Room</h3></label>
+                    <p class="auction">500 PO. Tenta vender itens a 3/4 do preço ou preço completo</p>
+                    <input type="radio" name="auditorium" id="auditorium1">
+                    <label for="auditorium1"><span class="quartomarcado"></span>
+                    <h3>Auditorium</h3></label>
+                    <p class="auditorium1">90 PO. +1 pra Earn Income com Performance</p>
+                    <input type="radio" name="auditorium" id="auditorium2">
+                    <label for="auditorium2"><span class="quartomarcado"></span>
+                    <h3>Auditorium (Grand)</h3></label>
+                    <p class="auditorium2">1900 PO. +2 pra Earn Income com Performance. Sempre crita no sucesso</p>
+                    <input type="checkbox" name="aviary" id="aviary">
+                    <label for="aviary"><span class="quartomarcado"></span>
+                    <h3>Aviary</h3></label>
+                    <p class="aviary">320 PO. Manda pássaros de vigia e mensagem</p>
+                    <input type="checkbox" name="banner" id="banner">
+                    <label for="banner"><span class="quartomarcado"></span>
+                    <h3>Banner Pole</h3></label>
+                    <p class="banner">1300 PO. Bota um banner que afeta o hex</p>
+                    <input type="radio" name="barracks" id="barracks1">
+                    <label for="barracks1"><span class="quartomarcado"></span>
+                    <h3>Barracks (Watchhouse)</h3></label>
+                    <p class="barracks1">320 PO. Trás tropas humanoides de até nível 6</p>
+                    <input type="radio" name="barracks" id="barracks2">
+                    <label for="barracks2"><span class="quartomarcado"></span>
+                    <h3>Barracks</h3></label>
+                    <p class="barracks2">1250 PO. Trás tropas humanoides de até nível 10</p>
+                    <input type="radio" name="barracks" id="barracks3">
+                    <label for="barracks3"><span class="quartomarcado"></span>
+                    <h3>Barracks (Garrison)</h3></label>
+                    <p class="barracks3">5600 PO. Trás tropas humanoides de até nível 14</p>
+                    <input type="radio" name="barracks" id="barracks4">
+                    <label for="barracks4"><span class="quartomarcado"></span>
+                    <h3>Barracks (Bastion)</h3></label>
+                    <p class="barracks4">31500 PO. Trás tropas humanoides de até nível 18</p>
+                    <input type="checkbox" name="bathroom" id="bathroom">
+                    <label for="bathroom"><span class="quartomarcado"></span>
+                    <h3>Bathroom</h3></label>
+                    <p class="bathroom">45 PO. +2 em Fortitude contra doenças e venenos</p>
+                    <input type="checkbox" name="battle" id="battle">
+                    <label for="battle"><span class="quartomarcado"></span>
+                    <h3>Battle Ring</h3></label>
+                    <p class="battle">30 PO. Deixa fazer Earn Income com Performance ou Intimidação no ringue</p>
+                    <input type="checkbox" name="binding" id="binding">
+                    <label for="binding"><span class="quartomarcado"></span>
+                    <h3>Binding Chamber</h3></label>
+                    <p class="binding">160 PO. Conta como caster secundário de ritual. Feat bônus pra Eidolon</p>
+                    <input type="radio" name="boat" id="boat1">
+                    <label for="boat1"><span class="quartomarcado"></span>
+                    <h3>Boat House</h3></label>
+                    <p class="boat1">45 PO. Lugar pra guardar barcos</p>
+                    <input type="radio" name="boat" id="boat2">
+                    <label for="boat2"><span class="quartomarcado"></span>
+                    <h3>Boat House (Deckyard)</h3></label>
+                    <p class="boat2">460 PO. Lugar pra guardar barcos</p>
+                    <input type="radio" name="boundary" id="boundary1">
+                    <label for="boundary1"><span class="quartomarcado"></span>
+                    <h3>Boundary Chamber</h3></label>
+                    <p class="boundary1">130 PO. Feat bônus pra Kineticista</p>
+                    <input type="radio" name="boundary" id="boundary2">
+                    <label for="boundary2"><span class="quartomarcado"></span>
+                    <h3>Boundary Chamber (Planar Gate)</h3></label>
+                    <p class="boundary2">1500 PO. Feat bônus pra Kineticista</p>
+                    <input type="radio" name="boundary" id="boundary3">
+                    <label for="boundary3"><span class="quartomarcado"></span>
+                    <h3>Boundary Chamber (Portal Chamber)</h3></label>
+                    <p class="boundary3">9500 PO. Feat bônus pra Kineticista</p>
+                    <input type="radio" name="brewery" id="brewery1">
+                    <label for="brewery1"><span class="quartomarcado"></span>
+                    <h3>Brewery</h3></label>
+                    <p class="brewery1">25 PO. +1 pra crafter drogas alquímicas. Gera drogas alquímicas ou álcool</p>
+                    <input type="radio" name="brewery" id="brewery2">
+                    <label for="brewery2"><span class="quartomarcado"></span>
+                    <h3>Brewery (Destilery)</h3></label>
+                    <p class="brewery2">415 PO. +2 pra crafter drogas alquímicas. Gera drogas alquímicas ou álcool</p>
+                    <input type="radio" name="carriage" id="carriage1">
+                    <label for="carriage1"><span class="quartomarcado"></span>
+                    <h3>Carriage House</h3></label>
+                    <p class="carriage1">25 PO. Lugar pra guardar veículos terrestres</p>
+                    <input type="radio" name="carriage" id="carriage2">
+                    <label for="carriage2"><span class="quartomarcado"></span>
+                    <h3>Carriage House (Garage)</h3></label>
+                    <p class="carriage2">200 PO. Lugar pra guardar veículos terrestres</p>
+                    <input type="radio" name="carriage" id="carriage3">
+                    <label for="carriage3"><span class="quartomarcado"></span>
+                    <h3>Carriage House (Depot)</h3></label>
+                    <p class="carriage3">1160 PO. Lugar pra guardar veículos terrestres</p>
+                    <input type="checkbox" name="cellar" id="cellar">
+                    <label for="cellar"><span class="quartomarcado"></span>
+                    <h3>Cellar</h3></label>
+                    <p class="cellar">40 PO. Gera alimentos</p>
+                    <input type="checkbox" name="closet" id="closet">
+                    <label for="closet"><span class="quartomarcado"></span>
+                    <h3>Closet</h3></label>
+                    <p class="closet">25 PO. Ajuda com disfarces</p>
+                    <input type="checkbox" name="conservatory" id="conservatory">
+                    <label for="conservatory"><span class="quartomarcado"></span>
+                    <h3>Conservatory</h3></label>
+                    <p class="conservatory">135 PO. Gera itens pereciveis adicionais</p>
+                    <input type="checkbox" name="crypt" id="crypt">
+                    <label for="crypt"><span class="quartomarcado"></span>
+                    <h3>Crypt</h3></label>
+                    <p class="crypt">240 PO. Conserva corpos. Bônus em rituais de mortos-vivos</p>
+                    <input type="radio" name="wall" id="wall1">
+                    <label for="wall1"><span class="quartomarcado"></span>
+                    <h3>Defensive Wall (Wooden)</h3></label>
+                    <p class="wall1">30 PO. Muro. Aumenta a defesa da casa</p>
+                    <input type="radio" name="wall" id="wall2">
+                    <label for="wall2"><span class="quartomarcado"></span>
+                    <h3>Defensive Wall (Stone)</h3></label>
+                    <p class="wall2">140 PO. Muro. Aumenta a defesa da casa</p>
+                    <input type="radio" name="wall" id="wall3">
+                    <label for="wall3"><span class="quartomarcado"></span>
+                    <h3>Defensive Wall (Steel-Reinforced)</h3></label>
+                    <p class="wall3">460 PO. Muro. Aumenta a defesa da casa</p>
+                    <input type="radio" name="wall" id="wall4">
+                    <label for="wall4"><span class="quartomarcado"></span>
+                    <h3>Defensive Wall (Standart Adamantine)</h3></label>
+                    <p class="wall4">1100 PO. Muro. Aumenta a defesa da casa</p>
+                    <input type="radio" name="wall" id="wall5">
+                    <label for="wall5"><span class="quartomarcado"></span>
+                    <h3>Defensive Wall (High Grade Adamantine)</h3></label>
+                    <p class="wall5">27000 PO. Muro. Aumenta a defesa da casa</p>
+                    <input type="radio" name="dinning" id="dinning1">
+                    <label for="dinning1"><span class="quartomarcado"></span>
+                    <h3>Dinning Hall</h3></label>
+                    <p class="dinning1">230 PO. Aumenta a duração de efeitos de comida. +2 em rituais de comida</p>
+                    <input type="radio" name="dinning" id="dinning2">
+                    <label for="dinning2"><span class="quartomarcado"></span>
+                    <h3>Dinning Hall (Grand)</h3></label>
+                    <p class="dinning2">4200 PO. Aumenta a duração e potência de efeitos de comida. +3 em rituais de comida</p>
+                    <input type="radio" name="dungeon" id="dungeon1">
+                    <label for="dungeon1"><span class="quartomarcado"></span>
+                    <h3>Dungeon (Holding Cells)</h3></label>
+                    <p class="dungeon1">55 PO. Comporta criaturas. +1 de bônus social contra criaturas na dungeon.</p>
+                    <input type="radio" name="dungeon" id="dungeon2">
+                    <label for="dungeon2"><span class="quartomarcado"></span>
+                    <h3>Dungeon</h3></label>
+                    <p class="dungeon2">340 PO. Comporta criaturas. +1 de bônus social contra criaturas na dungeon.</p>
+                    <input type="radio" name="dungeon" id="dungeon3">
+                    <label for="dungeon3"><span class="quartomarcado"></span>
+                    <h3>Dungeon (Bastile)</h3></label>
+                    <p class="dungeon3">6100 PO. Comporta criaturas. +1 de bônus social contra criaturas na dungeon.</p>
+                    <input type="checkbox" name="escape" id="escape">
+                    <label for="escape"><span class="quartomarcado"></span>
+                    <h3>Escape Route</h3></label>
+                    <p class="escape">35 PO. Rotas de fuga pra entrar e sair de casa</p>
+                    <input type="checkbox" name="execution" id="execution">
+                    <label for="execution"><span class="quartomarcado"></span>
+                    <h3>Execution Balcony</h3></label>
+                    <p class="execution">300 PO. Executar criaturas dá bônus em Intimidação</p>
+                    <input type="checkbox" name="expandedcells" id="expandedcells">
+                    <label for="expandedcells"><span class="quartomarcado"></span>
+                    <h3>Expanded Cells</h3></label>
+                    <p class="expandedcells">250 PO. Aumenta o tamanho das celas da dungeon</p>
+                    <input type="checkbox" name="falconry" id="falconry">
+                    <label for="falconry"><span class="quartomarcado"></span>
+                    <h3>Falconry Tower</h3></label>
+                    <p class="falconry">160 PO. Ganha um Pet falcão</p>
+                    <input type="checkbox" name="flesh" id="flesh">
+                    <label for="flesh"><span class="quartomarcado"></span>
+                    <h3>Flesh Laboratory</h3></label>
+                    <p class="flesh">900 PO. +2 de bônus em rituais de Flashwarp e pra Grafts</p>
+                    <input type="radio" name="gaming" id="gaming1">
+                    <label for="gaming1"><span class="quartomarcado"></span>
+                    <h3>Gaming Hall (Gambler's Den)</h3></label>
+                    <p class="gaming1">50 PO. +1 de bônus social pra apostar. Pode fazer Earn Income com Gambling Lore</p>
+                    <input type="radio" name="gaming" id="gaming2">
+                    <label for="gaming2"><span class="quartomarcado"></span>
+                    <h3>Gaming Hall</h3></label>
+                    <p class="gaming2">850 PO. +2 de bônus social pra apostar. Pode fazer Earn Income com Gambling Lore</p>
+                    <input type="checkbox" name="garden" id="garden">
+                    <label for="garden"><span class="quartomarcado"></span>
+                    <h3>Garden</h3></label>
+                    <p class="garden">60 PO. Plunder adicional pra itens naturais</p>
+                    <input type="radio" name="gatehouse" id="gatehouse1">
+                    <label for="gatehouse1"><span class="quartomarcado"></span>
+                    <h3>Gatehouse</h3></label>
+                    <p class="gatehouse1">400 PO. Portão. Uma tropa ganha bônus em Vontade</p>
+                    <input type="radio" name="gatehouse" id="gatehouse2">
+                    <label for="gatehouse2"><span class="quartomarcado"></span>
+                    <h3>Gatehouse (Adamantine)</h3></label>
+                    <p class="gatehouse2">11000 PO. Portão. Uma tropa ganha bônus em Vontade</p>
+                    <input type="radio" name="gauntlet" id="gauntlet1">
+                    <label for="gauntlet1"><span class="quartomarcado"></span>
+                    <h3>Gauntlet (Basic)</h3></label>
+                    <p class="gauntlet1">48 PO. Sala com armadilhas</p>
+                    <input type="radio" name="gauntlet" id="gauntlet2">
+                    <label for="gauntlet2"><span class="quartomarcado"></span>
+                    <h3>Gauntlet</h3></label>
+                    <p class="gauntlet2">480 PO. Sala com armadilhas</p>
+                    <input type="radio" name="gauntlet" id="gauntlet3">
+                    <label for="gauntlet3"><span class="quartomarcado"></span>
+                    <h3>Gauntlet (Fortified)</h3></label>
+                    <p class="gauntlet3">2800 PO. Sala com armadilhas</p>
+                    <input type="radio" name="gauntlet" id="gauntlet4">
+                    <label for="gauntlet4"><span class="quartomarcado"></span>
+                    <h3>Gauntlet (Crucible)</h3></label>
+                    <p class="gauntlet4">21500 PO. Sala com armadilhas</p>
+                    <input type="radio" name="guestquarters" id="guestquarters1">
+                    <label for="guestquarters1"><span class="quartomarcado"></span>
+                    <h3>Guest Quarters (Guest Bedroom)</h3></label>
+                    <p class="guestquarters1">45 PO. +1 em Diplomacia com hóspedes. Gera renda por aluguel de quartos</p>
+                    <input type="radio" name="guestquarters" id="guestquarters2">
+                    <label for="guestquarters2"><span class="quartomarcado"></span>
+                    <h3>Guest Quarters (Inn)</h3></label>
+                    <p class="guestquarters2">300 PO. +2 em Diplomacia com hóspedes. Gera renda por aluguel de quartos</p>
+                    <input type="radio" name="guestquarters" id="guestquarters3">
+                    <label for="guestquarters3"><span class="quartomarcado"></span>
+                    <h3>Guest Quarters</h3></label>
+                    <p class="guestquarters3">1200 PO. +2 em Diplomacia com hóspedes. Gera renda por aluguel de quartos</p>
+                    <input type="radio" name="guestquarters" id="guestquarters4">
+                    <label for="guestquarters4"><span class="quartomarcado"></span>
+                    <h3>Guest Quarters (Embassy)</h3></label>
+                    <p class="guestquarters4">3000 PO. +3 em Diplomacia com hóspedes. Gera renda por aluguel de quartos</p>
+                   <input type="radio" name="guestquarters" id="guestquarters5">
+                    <label for="guestquarters5"><span class="quartomarcado"></span>
+                    <h3>Guest Quarters (Luxury Suites)</h3></label>
+                    <p class="guestquarters5">3600 PO. +2 em Diplomacia com hóspedes. Gera renda por aluguel de quartos</p>
+                    <input type="radio" name="curiosities" id="curiosities1">
+                    <label for="curiosities1"><span class="quartomarcado"></span>
+                    <h3>Hall of Curiosities</h3></label>
+                    <p class="curiosities1">130 PO. +1 pra identificar magia e alquimia. Gera talismãs</p>
+                    <input type="radio" name="curiosities" id="curiosities2">
+                    <label for="curiosities2"><span class="quartomarcado"></span>
+                    <h3>Hall of Curiosities (Exquisite)</h3></label>
+                    <p class="curiosities2">845 PO. +2 pra identificar magia e alquimia. Gera talismãs</p>
+                    <input type="checkbox" name="pool" id="pool">
+                    <label for="pool"><span class="quartomarcado"></span>
+                    <h3>Indoor Pool</h3></label>
+                    <p class="pool">140 PO. Descansar reduz 1 doomed e drained adicional</p>
+                    <input type="radio" name="infirmary" id="infirmary1">
+                    <label for="infirmary1"><span class="quartomarcado"></span>
+                    <h3>Infirmary (Medicine Closet)</h3></label>
+                    <p class="infirmary1">30 PO. +1 em Medicina e contra doenças e venenos. Cura mais com Treat Wounds</p>
+                    <input type="radio" name="infirmary" id="infirmary2">
+                    <label for="infirmary2"><span class="quartomarcado"></span>
+                    <h3>Infirmary</h3></label>
+                    <p class="infirmary2">430 PO. +2 em Medicina e contra doenças e venenos. Cura mais com Treat Wounds</p>
+                    <input type="radio" name="infirmary" id="infirmary3">
+                    <label for="infirmary3"><span class="quartomarcado"></span>
+                    <h3>Infirmary (Medical Ward)</h3></label>
+                    <p class="infirmary3">5400 PO. +3 em Medicina e contra doenças e venenos. Cura mais com Treat Wounds</p>
+                    <input type="checkbox" name="keep" id="keep">
+                    <label for="keep"><span class="quartomarcado"></span>
+                    <h3>Keep</h3></label>
+                    <p class="keep">440 PO. Melhora a CD de Siege Weapons, Hazards e Traps. Feat bônus pra Guardian</p>
+                    <input type="radio" name="kitchen" id="kitchen1">
+                    <label for="kitchen1"><span class="quartomarcado"></span>
+                    <h3>Kitchen</h3></label>
+                    <p class="kitchen1">30 PO. +1 de bônus pra preparar comidas. Mais recursos pra Wandering Chef</p>
+                    <input type="radio" name="kitchen" id="kitchen2">
+                    <label for="kitchen2"><span class="quartomarcado"></span>
+                    <h3>Kitchen (Cookery)</h3></label>
+                    <p class="kitchen2">320 PO. +2 de bônus pra preparar comidas. Mais recursos pra Wandering Chef</p>
+                    <input type="radio" name="kitchen" id="kitchen3">
+                    <label for="kitchen3"><span class="quartomarcado"></span>
+                    <h3>Kitchen (Hearth Hall)</h3></label>
+                    <p class="kitchen3">1250 PO. +2 de bônus pra preparar comidas. Mais recursos pra Wandering Chef</p>
+                    <input type="radio" name="kitchen" id="kitchen4">
+                    <label for="kitchen4"><span class="quartomarcado"></span>
+                    <h3>Kitchen (Culinary Suit)</h3></label>
+                    <p class="kitchen4">3850 PO. +3 de bônus pra preparar comidas. Mais recursos pra Wandering Chef</p>
+                    <input type="radio" name="library" id="library1">
+                    <label for="library1"><span class="quartomarcado"></span>
+                    <h3>Library (Personal Collection)</h3></label>
+                    <p class="library1">50 PO. +1 de bônus em Recall Knowledge com Lore. Cantrip extra pra preparados. Pocket Library gratuito.</p>
+                    <input type="radio" name="library" id="library2">
+                    <label for="library2"><span class="quartomarcado"></span>
+                    <h3>Library</h3></label>
+                    <p class="library2">350 PO. +2 de bônus em Recall Knowledge com Lore. Cantrip extra pra preparados. Pocket Library gratuito.</p>
+                    <input type="radio" name="library" id="library3">
+                    <label for="library3"><span class="quartomarcado"></span>
+                    <h3>Library (Grand Library)</h3></label>
+                    <p class="library3">4300 PO. +3 de bônus em Recall Knowledge com Lore. Cantrip extra pra preparados. Pocket Library gratuito.</p>
+                    <input type="checkbox" name="loading" id="loading">
+                    <label for="loading"><span class="quartomarcado"></span>
+                    <h3>Loading Room</h3></label>
+                    <p class="loading">55 PO. Gera munições e bombas</p>
+                    <input type="checkbox" name="machinarium" id="machinarium">
+                    <label for="machinarium"><span class="quartomarcado"></span>
+                    <h3>Machinarium</h3></label>
+                    <p class="machinarium">140 PO. Gera gadgets. Modificação inicial bônus pra Inventor</p>
+                    <input type="checkbox" name="menagerie" id="menagerie">
+                    <label for="menagerie"><span class="quartomarcado"></span>
+                    <h3>Menagerie</h3></label>
+                    <p class="menagerie">50 PO. +1 em tudo pra companions não inteligentes</p>
+                    <input type="checkbox" name="message" id="message">
+                    <label for="message"><span class="quartomarcado"></span>
+                    <h3>Message Room</h3></label>
+                    <p class="message">6300 PO. Cria uma network pra mensagens. Bônus pra Field Propagandist</p>
+                    <input type="checkbox" name="necromancer" id="necromancer">
+                    <label for="necromancer"><span class="quartomarcado"></span>
+                    <h3>Necromancer's Alcove</h3></label>
+                    <p class="necromancer">240 PO. Reduz custo pra Create Undead. Magia de Foco bônus pra Necromantes</p>
+                    <input type="checkbox" name="nexus" id="nexus">
+                    <label for="nexus"><span class="quartomarcado"></span>
+                    <h3>Nexus</h3></label>
+                    <p class="nexus">240 PO. +1 pra craftar itens mágicos. Bônus pra varinhas e cajados</p>
+                    <input type="checkbox" name="orrery" id="orrery">
+                    <label for="orrery"><span class="quartomarcado"></span>
+                    <h3>Orrery</h3></label>
+                    <p class="orrery">150 PO. Magia de assinatura bônus pra conjuradores espontâneos</p>
+                    <input type="checkbox" name="reconnaissance" id="reconnaissance">
+                    <label for="reconnaissance"><span class="quartomarcado"></span>
+                    <h3>Reconnaissance Den</h3></label>
+                    <p class="reconnaissance">30 PO. +2 pra Gather Information e testes secretos no hex</p>
+                    <input type="radio" name="ritual" id="ritual1">
+                    <label for="ritual1"><span class="quartomarcado"></span>
+                    <h3>Ritual Chamber</h3></label>
+                    <p class="ritual1">60 PO. +1 pra testes de rituais. Salva uma falha uma vez em um ritual</p>
+                    <input type="radio" name="ritual" id="ritual2">
+                    <label for="ritual2"><span class="quartomarcado"></span>
+                    <h3>Ritual Chamber (Professional)</h3></label>
+                    <p class="ritual2">680 PO. +2 pra testes de rituais. Salva uma falha uma vez em um ritual</p>
+                    <input type="radio" name="ritual" id="ritual3">
+                    <label for="ritual3"><span class="quartomarcado"></span>
+                    <h3>Ritual Chamber (Exquisite)</h3></label>
+                    <p class="ritual3">14500 PO. +3 pra testes de rituais. Salva uma falha uma vez em um ritual</p>
+                    <input type="checkbox" name="runeforge" id="runeforge">
+                    <label for="runeforge"><span class="quartomarcado"></span>
+                    <h3>Runeforge</h3></label>
+                    <p class="runeforge">250 PO. Runa extra pra Runesmith. Coisas envolvendo runas de itens de regras que a gente não usa</p>
+                    <input type="checkbox" name="saloon" id="saloon">
+                    <label for="saloon"><span class="quartomarcado"></span>
+                    <h3>Saloon</h3></label>
+                    <p class="saloon">45 PO. +1 pra Gather Information e Recall Knowledge relacionado ao hex. Bônus social pra Gunslinger e Swashbuckler</p>
+                    <input type="checkbox" name="sanctum" id="sanctum">
+                    <label for="sanctum"><span class="quartomarcado"></span>
+                    <h3>Sanctum</h3></label>
+                    <p class="sanctum">325 PO. +2 em testes de Carisma e rituais pra falar com o patrono. Habilidade extra pra Familiar</p>
+                    <input type="checkbox" name="scriptorium" id="scriptorium">
+                    <label for="scriptorium"><span class="quartomarcado"></span>
+                    <h3>Scriptorium</h3></label>
+                    <p class="scriptorium">325 PO. Gera pergaminhos</p>
+                    <input type="checkbox" name="scrying" id="scrying">
+                    <label for="scrying"><span class="quartomarcado"></span>
+                    <h3>Scrying Room</h3></label>
+                    <p class="scrying">820 PO. Melhora uma bola de cristal que você por na sala</p>
+                    <input type="radio" name="shrine" id="shrine1">
+                    <label for="shrine1"><span class="quartomarcado"></span>
+                    <h3>Shrine Room</h3></label>
+                    <p class="shrine1">30 PO. +1 em Religião. Gera água benta e talvez dê um bônus pra devotos</p>
+                    <input type="radio" name="shrine" id="shrine2">
+                    <label for="shrine2"><span class="quartomarcado"></span>
+                    <h3>Shrine Room (Temple)</h3></label>
+                    <p class="shrine2">450 PO. +2 em Religião. Gera água benta e talvez dê um bônus pra devotos</p>
+                    <input type="radio" name="shrine" id="shrine3">
+                    <label for="shrine3"><span class="quartomarcado"></span>
+                    <h3>Shrine Room (Cathedral)</h3></label>
+                    <p class="shrine3">6000 PO. +3 em Religião. Gera água benta e talvez dê um bônus pra devotos</p>
+                    <input type="checkbox" name="stables" id="stables">
+                    <label for="stables"><span class="quartomarcado"></span>
+                    <h3>Stables</h3></label>
+                    <p class="stables">25 PO. +5 feet de deslocamento pra companheiros montarias não inteligentes</p>
+                    <input type="radio" name="storefront" id="storefront1">
+                    <label for="storefront1"><span class="quartomarcado"></span>
+                    <h3>Storefront</h3></label>
+                    <p class="storefront1">35 PO. +1 em testes relacionados a dinheiro. Gera Earn Income Trained</p>
+                    <input type="radio" name="storefront" id="storefront2">
+                    <label for="storefront2"><span class="quartomarcado"></span>
+                    <h3>Storefront (Grand)</h3></label>
+                    <p class="storefront2">350 PO. +2 em testes relacionados a dinheiro. Gera Earn Income Expert</p>
+                    <input type="radio" name="storefront" id="storefront3">
+                    <label for="storefront3"><span class="quartomarcado"></span>
+                    <h3>Storefront (Emporium)</h3></label>
+                    <p class="storefront3">5500 PO. +3 em testes relacionados a dinheiro. Gera Earn Income Master</p>
+                    <input type="checkbox" name="study" id="study">
+                    <label for="study"><span class="quartomarcado"></span>
+                    <h3>Study</h3></label>
+                    <p class="study">45 PO. Bônus em Sociedade e em Persue a Lead se for Investigador</p>
+                    <input type="checkbox" name="tavern" id="tavern">
+                    <label for="tavern"><span class="quartomarcado"></span>
+                    <h3>Tavern</h3></label>
+                    <p class="tavern">45 PO. Gera renda. A renda é maior se também tiver uma Brewery e Kitchen</p>
+                    <input type="checkbox" name="teleport" id="teleport">
+                    <label for="teleport"><span class="quartomarcado"></span>
+                    <h3>Teleportation Chamber</h3></label>
+                    <p class="teleport">6200 PO. Permite se teleportar para outros círculos de teleporte que tiver acesso</p>
+                    <input type="checkbox" name="torture" id="torture">
+                    <label for="torture"><span class="quartomarcado"></span>
+                    <h3>Torture Chamber</h3></label>
+                    <p class="torture">425 PO. Aumenta as celas da Dungeon. Permite Coagir com Medicina</p>
+                    <input type="radio" name="tradehall" id="tradehall1">
+                    <label for="tradehall1"><span class="quartomarcado"></span>
+                    <h3>Trade Hall</h3></label>
+                    <p class="tradehall1">140 PO. Sempre consegue Earn Income do nível da casa</p>
+                    <input type="radio" name="tradehall" id="tradehall2">
+                    <label for="tradehall2"><span class="quartomarcado"></span>
+                    <h3>Trade Hall (Professional)</h3></label>
+                    <p class="tradehall2">950 PO. Sempre consegue Earn Income do nível da casa e consegue sucesso na falha</p>
+                    <input type="radio" name="training" id="training1">
+                    <label for="training1"><span class="quartomarcado"></span>
+                    <h3>Training Ground</h3></label>
+                    <p class="training1">80 PO. +1 de bônus em coisas de defesa de siege. Reduz os dias de retreino. Melhora tropas. Feat bônus pra Fighter</p>
+                    <input type="radio" name="training" id="training2">
+                    <label for="training2"><span class="quartomarcado"></span>
+                    <h3>Training Ground (Drill Field)</h3></label>
+                    <p class="training2">870 PO. +2 de bônus em coisas de defesa de siege. Reduz os dias de retreino. Melhora tropas. Feat bônus pra Fighter</p>
+                    <input type="checkbox" name="translocation" id="translocation">
+                    <label for="translocation"><span class="quartomarcado"></span>
+                    <h3>Translocation Room</h3></label>
+                    <p class="translocation">440 PO. Cria salas pra se teleportar dentro da casa</p>
+                    <input type="checkbox" name="trauma" id="trauma">
+                    <label for="trauma"><span class="quartomarcado"></span>
+                    <h3>Trauma Ward</h3></label>
+                    <p class="trauma">100 PO. Dobra a quantidade de pessoas trataveis com Medicina</p>
+                    <input type="radio" name="vault" id="vault1">
+                    <label for="vault1"><span class="quartomarcado"></span>
+                    <h3>Vault</h3></label>
+                    <p class="vault1">70 PO. Cofre com uma tranca padrão</p>
+                    <input type="radio" name="vault" id="vault2">
+                    <label for="vault2"><span class="quartomarcado"></span>
+                    <h3>Vault (Warded)</h3></label>
+                    <p class="vault2">5000 PO. Cofre com uma tranca boa e Planar Seal</p>
+                    <input type="radio" name="vault" id="vault3">
+                    <label for="vault3"><span class="quartomarcado"></span>
+                    <h3>Vault (Antimagic)</h3></label>
+                    <p class="vault3">28000 PO. Cofre com uma tranca superior e antimagia</p>
+                    <input type="radio" name="venarium" id="venarium1">
+                    <label for="venarium1"><span class="quartomarcado"></span>
+                    <h3>Venarium</h3></label>
+                    <p class="venarium1">50 PO. +1 pra craftar venenos. Gera venenos</p>
+                    <input type="radio" name="venarium" id="venarium2">
+                    <label for="venarium2"><span class="quartomarcado"></span>
+                    <h3>Venarium (Grand)</h3></label>
+                    <p class="venarium2">600 PO. +2 pra craftar venenos. Gera venenos</p>
+                    <input type="radio" name="war" id="war1">
+                    <label for="war1"><span class="quartomarcado"></span>
+                    <h3>War Room</h3></label>
+                    <p class="war1">50 PO. +1 em Warfare Lore. Tática bônus pra Commander</p>
+                    <input type="radio" name="war" id="war2">
+                    <label for="war2"><span class="quartomarcado"></span>
+                    <h3>War Room (Exquisite)</h3></label>
+                    <p class="war2">850 PO. +2 em Warfare Lore. Tática bônus pra Commander</p>
+                    <input type="checkbox" name="wine" id="wine">
+                    <label for="wine"><span class="quartomarcado"></span>
+                    <h3>Wine Cellar</h3></label>
+                    <p class="wine">60 PO. Substitui 10 garrafas de álcool por vinhos alquímicos</p>
+                    <input type="radio" name="workshop" id="workshop1">
+                    <label for="workshop1"><span class="quartomarcado"></span>
+                    <h3>Workshop</h3></label>
+                    <p class="workshop1">50 PO. +1 pra craftar e reparar itens</p>
+                    <input type="radio" name="workshop" id="workshop2">
+                    <label for="workshop2"><span class="quartomarcado"></span>
+                    <h3>Workshop (Professional)</h3></label>
+                    <p class="workshop2">430 PO. +2 pra craftar e reparar itens</p>
+                    <input type="radio" name="workshop" id="workshop3">
+                    <label for="workshop3"><span class="quartomarcado"></span>
+                    <h3>Workshop (Exquisite)</h3></label>
+                    <p class="workshop3">5400 PO. +3 pra craftar e reparar itens</p>
                 </div>
             </section>
         </div>
     </div>
     <div class="example">
-
+        <div class="example2">
+            <h2>Journal da Casa</h2>
+            <section class="secexample" id="excasa">
+                <h3>Casa: </h3>
+                <hr>
+                <ul>
+                    <li></li>
+                </ul>
+            </section>
+            <section class="secexample" id="exfeats">
+                <h3>Poderes: </h3>
+                <hr>
+                <ul>
+                    
+                </ul>
+            </section>
+            <section class="secexample" id="exquartos">
+                <h3>Quartos: </h3>
+                <hr>
+                <ul>
+                </ul>
+            </section>
+            <section class="secexample" id="examenities">
+                <h3>Access Amenities: </h3>
+                <hr>
+                <ul>
+                    <li>🛡️<i> Heroic Preparations (Padrão): </i>Recebe um ponto heróico temporário.</li>
+                    <li>🍖<i> Hearty Preparations (Padrão): </i>Recebe PV temporário igual o seu nível + o nível da casa</li>
+                </ul>
+            </section>
+            <section class="secexample" id="exrenda">
+                <h3>Renda: </h3>
+                <hr>
+                <ul>
+                </ul>
+            </section>
+            <section class="secexample" id="exvalores">
+                <h3>Valores: </h3>
+                <hr>
+                <ul>
+                </ul>
+            </section>
+        </div>
     </div>
+    </div>
+    <input type="button" value="Copiar" class="butao" onclick="copiar()">
     <footer>
 
     </footer>

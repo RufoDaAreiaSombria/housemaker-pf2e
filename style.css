@@ -56,10 +56,6 @@ header, section#titulocassino {
     margin: 22px auto;
 }
 
-.menu {
-
-}
-
 .aside {
     display: flex;
 }
@@ -69,7 +65,6 @@ aside {
     height: 624px;
     background-color: var(--verdescuro);
     border: 5px solid var(--marrompf);
-    
 }
 
 aside input {
@@ -117,6 +112,7 @@ aside input {
 
 .aside section.inicio {
     display: flex;
+    
 }
 
 .inicio2, .nivel2, .formfactor2, .feats2, .rooms2 {
@@ -128,7 +124,7 @@ aside input {
     border-radius: 5%;
 }
 
-.inicio2 h2, .inicio2 h3, .nivel2 h2, .formfactor2 h2 {
+.inicio2 h2, .inicio2 h3, .nivel2 h2, .formfactor2 h2, .example2 h2 {
     color: var(--marrompf);
     text-shadow: 
     1px 1px 0 var(--verdeclaro),   /* Sombra para baixo-direita */
@@ -197,7 +193,7 @@ aside input {
     text-align: left;
 }
 
-.formfactor2 h2 {
+.formfactor2 h2, .example2 h2 {
     text-align: center;
     font-size: 2em;
     text-shadow: 
@@ -211,7 +207,7 @@ aside input {
     display: none;
 }
 
-.tipocasa, .feats2 label {
+.tipocasa, .feats2 label, .rooms2 label {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -227,7 +223,7 @@ aside input {
     margin-left: 10px;
 }
 
-.formfactor2 p, .feats2 p {
+.formfactor2 p, .feats2 p, .rooms2 p {
     font-family: 'menor';
     margin: 0;
     padding-left: 50px;
@@ -243,7 +239,7 @@ aside input {
     -1px 1px 0 var(--verdeclaro);   /* Sombra para baixo-esquerda */
 }
 
-.feats2 {
+.feats2, .rooms2 {
     text-align: left;
     max-height: 95%;
     overflow-y: auto;
@@ -251,11 +247,11 @@ aside input {
     -ms-overflow-style: none;
 }
 
-.feats2::-webkit-scrollbar {
+.feats2::-webkit-scrollbar, .rooms2::-webkit-scrollbar, .example2::-webkit-scrollbar {
     display: none;
 }
 
-.feats2 h2 {
+.feats2 h2, .rooms2 h2 {
     text-align: center;
     font-size: 2em;
     color: var(--marrompf);
@@ -270,11 +266,11 @@ aside input {
     font-size: 1.6em;
 }
 
-.feats2 input {
+.feats2 input, .rooms2 input {
     display: none;
 }
 
-.feats2 h3 {
+.feats2 h3, .rooms2 h3 {
     color: var(--marrompf);
     text-shadow: 
     1px 1px 0 var(--verdeclaro),   /* Sombra para baixo-direita */
@@ -285,11 +281,45 @@ aside input {
 }
 
 .example {
-
+    background-color: var(--verdescuro-t);
+    border: 5px solid var(--marrompf);
+    width: 622px;
+    height: 624px;
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-footer {
+.example2 {
+    width: 95%;
+    height: 95%;
+    border-radius: 5%;
+    background-color: rgba(196, 241, 190, 0.1);
+    overflow-y: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
 
+.example2 h3 {
+    margin-bottom: 0px;
+    margin-left: 15px;
+}
+
+hr {
+    width: 95%;
+    position: center;
+    border-color: var(--marrompf);
+    margin-top: 0px;
+}
+
+ul {
+    list-style: none;
+    box-shadow: 3px 3px 3px rgb(0,0,0,0.4);
+    padding: 5px;
+    border-radius: 10px;
+    background-color:rgba(255, 240, 219, 0.4);
 }
 
 .aside:has(#nivel:checked) label[for="nivel"] .icon,
@@ -340,21 +370,7 @@ footer {
     transform: scale(1.1);
 }
 
-.formfactor2 label:hover .casamarcada {
-    background-color: var(--laranja);
-    transform: translateY(-3px) scale(1.05);
-    box-shadow: 0 6px 0 var(--marrompf);
-}
-
-label input:checked + .casamarcada {
-    background-color: var(--verdescuro);
-    color: var(--verdeclaro);
-    border-color: var(--laranja);
-    box-shadow: 0 0 10px var(--laranja);
-    transform: scale(1.1);
-}
-
-.featmarcado {
+.featmarcado, .quartomarcado, .casamarcada {
     display: inline-block;
     width: 24px;
     height: 24px;
@@ -366,15 +382,61 @@ label input:checked + .casamarcada {
         box-shadow 0.2s;
 }
 
-.feats2 label:hover .featmarcado {
+.feats2 label:hover .featmarcado, .rooms2 label:hover .quartomarcado, .formfactor2 label:hover .casamarcada {
     background-color: var(--laranja);
     transform: translateY(-3px) scale(1.05);
     box-shadow: 0 6px 0 var(--marrompf);
 }
 
-.feats2 input:checked + label .featmarcado {
+.feats2 input:checked + label .featmarcado, .rooms2 input:checked + label .quartomarcado, .formfactor2 input:checked + label .casamarcada {
     background-color: var(--verdescuro);
     border-color: var(--laranja);
     box-shadow: 0 0 10px var(--laranja);
     transform: scale(1.1);
+}
+
+.encapsulamento {
+    display: flex;
+    padding-left: 50px;
+}
+
+.feats2 label, .feats2 p, .rooms2 label, .rooms2 p {
+    display: none;
+}
+
+.butao {
+    font-family: maior;
+    font-size: 2.5em;
+    margin: 15px;
+    margin-right: 58px;
+    text-align: center;
+    position: fixed;
+    right: 0;
+    border: 5px solid var(--marrompf);
+    background-color: var(--verdescuro-t);
+    color: var(--marrompf);
+    text-shadow: 
+    1px 1px 0 var(--verdeclaro),   /* Sombra para baixo-direita */
+    -1px -1px 0 var(--verdeclaro),  /* Sombra para cima-esquerda */
+    1px -1px 0 var(--verdeclaro),   /* Sombra para cima-direita */
+    -1px 1px 0 var(--verdeclaro);   /* Sombra para baixo-esquerda */
+    transition: 
+        transform 0.15s ease,
+        box-shadow 0.15s ease,
+        background-color 0.15s ease;
+}
+
+.butao:hover {
+    transform: translateY(-4px);
+    background-color: var(--verdescuro);
+    box-shadow: 
+        0 6px 0 var(--marrompf),
+        0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.butao:active {
+    transform: translateY(2px);
+    box-shadow: 
+        0 2px 0 var(--marrompf),
+        0 4px 8px rgba(0, 0, 0, 0.3);
 }
