@@ -78,22 +78,22 @@ const casarooms = {
   atrium1: ["🏛️ <i>Atrium: </i>", "a", 200],
   atrium2: ["🏛️ <i>Atrium (Grand): </i>", "a", 1200],
   auction: ["🔨 <i>Auction Room: </i>", "a", 500],
-  auditorium1: ["🎭 <i>Auditorium: </i>", "a", 200],
-  auditorium2: ["🎭 <i>Auditorium (Grand): </i>", "a", 1200],
-  aviary: ["🦜 <i>Aviary: </i>", "a", 160],
+  auditorium1: ["🎭 <i>Auditorium: </i>", "a", 90],
+  auditorium2: ["🎭 <i>Auditorium (Grand): </i>", "a", 1900],
+  aviary: ["🦜 <i>Aviary: </i>", "a", 320],
   banner: ["🚩 <i>Banner Pole: </i>", "a", 1300],
   barracks1: ["🛏️ <i>Barracks (Watchhouse): </i>", "a", 320],
   barracks2: ["🛏️ <i>Barracks: </i>", "a", 1250],
   barracks3: ["🛏️ <i>Barracks (Garrison): </i>", "a", 5600],
   barracks4: ["🛏️ <i>Barracks (Bastion): </i>", "a", 31500],
   bathroom: ["🛁 <i>Bathroom: </i>", "a", 45],
-  battle: ["⚔️ <i>Battle Ring: </i>", "a", 850],
-  binding: ["🔗 <i>Binding Chamber: </i>", "a", 900],
-  boat1: ["⛵ <i>Boat House: </i>", "a", 25],
-  boat2: ["⛵ <i>Boat House (Deckyard): </i>", "a", 200],
-  boundary1: ["🌐 <i>Boundary Chamber: </i>", "a", 6200],
-  boundary2: ["🌐 <i>Boundary Chamber (Planar Gate): </i>", "a", 6200],
-  boundary3: ["🌐 <i>Boundary Chamber (Portal Chamber): </i>", "a", 6200],
+  battle: ["⚔️ <i>Battle Ring: </i>", "a", 30],
+  binding: ["🔗 <i>Binding Chamber: </i>", "a", 160],
+  boat1: ["⛵ <i>Boat House: </i>", "a", 45],
+  boat2: ["⛵ <i>Boat House (Deckyard): </i>", "a", 460],
+  boundary1: ["🌐 <i>Boundary Chamber: </i>", "a", 130],
+  boundary2: ["🌐 <i>Boundary Chamber (Planar Gate): </i>", "a", 1500],
+  boundary3: ["🌐 <i>Boundary Chamber (Portal Chamber): </i>", "a", 9500],
   brewery1: ["🍺 <i>Brewery: </i>", "a", 25],
   brewery2: ["🍺 <i>Brewery (Destilery): </i>", "a", 415],
   carriage1: ["🚗 <i>Carriage House: </i>", "a", 25],
@@ -101,17 +101,17 @@ const casarooms = {
   carriage3: ["🚗 <i>Carriage House (Depot): </i>", "a", 1160],
   cellar: ["🍷 <i>Cellar: </i>", "a", 40],
   closet: ["👗 <i>Closet: </i>", "a", 25],
-  conservatory: ["🌿 <i>Conservatory: </i>", "a", 60],
-  crypt: ["⚰️ <i>Crypt: </i>", "a", 70],
-  wall1: ["🧱 <i>Defensive Wall (Wooden): </i>", "a", 500],
-  wall2: ["🧱 <i>Defensive Wall (Stone): </i>", "a", 2000],
-  wall3: ["🧱 <i>Defensive Wall (Steel-Reinforced): </i>", "a", 6000],
-  wall4: ["🧱 <i>Defensive Wall (Standart Adamantine): </i>", "a", 14000],
-  wall5: ["🧱 <i>Defensive Wall (High Grade Adamantine): </i>", "a", 28000],
-  dinning1: ["🍽️ <i>Dinning Hall: </i>", "a", 45],
-  dinning2: ["🍽️ <i>Dinning Hall (Grand): </i>", "a", 350],
-  dungeon1: ["⛓️ <i>Dungeon (Holding Cells): </i>", "a", 250],
-  dungeon2: ["⛓️ <i>Dungeon: </i>", "a", 250],
+  conservatory: ["🌿 <i>Conservatory: </i>", "a", 135],
+  crypt: ["⚰️ <i>Crypt: </i>", "a", 240],
+  wall1: ["🧱 <i>Defensive Wall (Wooden): </i>", "a", 30],
+  wall2: ["🧱 <i>Defensive Wall (Stone): </i>", "a", 140],
+  wall3: ["🧱 <i>Defensive Wall (Steel-Reinforced): </i>", "a", 460],
+  wall4: ["🧱 <i>Defensive Wall (Standart Adamantine): </i>", "a", 1100],
+  wall5: ["🧱 <i>Defensive Wall (High Grade Adamantine): </i>", "a", 27000],
+  dinning1: ["🍽️ <i>Dinning Hall: </i>", "a", 230],
+  dinning2: ["🍽️ <i>Dinning Hall (Grand): </i>", "a", 4200],
+  dungeon1: ["⛓️ <i>Dungeon (Holding Cells): </i>", "a", 55],
+  dungeon2: ["⛓️ <i>Dungeon: </i>", "a", 340],
   dungeon3: ["⛓️ <i>Dungeon (Bastile): </i>", "a", 6100],
   escape: ["🏃 <i>Escape Route: </i>", "a", 35],
   execution: ["🪓 <i>Execution Balcony: </i>", "a", 300],
@@ -122,9 +122,9 @@ const casarooms = {
   gaming2: ["🎲 <i>Gaming Hall: </i>", "a", 850],
   garden: ["🌸 <i>Garden: </i>", "a", 60],
   gatehouse1: ["🏰 <i>Gatehouse: </i>", "a", 400],
-  gatehouse2: ["🏰 <i>Gatehouse (Adamantine): </i>", "a", 14000],
-  gauntlet1: ["🥊 <i>Gauntlet (Basic): </i>", "a", 450],
-  gauntlet2: ["🥊 <i>Gauntlet: </i>", "a", 1200],
+  gatehouse2: ["🏰 <i>Gatehouse (Adamantine): </i>", "a", 11000],
+  gauntlet1: ["🥊 <i>Gauntlet (Basic): </i>", "a", 48],
+  gauntlet2: ["🥊 <i>Gauntlet: </i>", "a", 480],
   gauntlet3: ["🥊 <i>Gauntlet (Fortified): </i>", "a", 2800],
   gauntlet4: ["🥊 <i>Gauntlet (Crucible): </i>", "a", 21500],
   guestquarters1: ["🛌 <i>Guest Quarters (Guest Bedroom): </i>", "a", 45],
@@ -139,25 +139,33 @@ const casarooms = {
   infirmary2: ["🏥 <i>Infirmary: </i>", "a", 430],
   infirmary3: ["🏥 <i>Infirmary (Medical Ward): </i>", "a", 5400],
   keep: ["🏯 <i>Keep: </i>", "a", 440],
+  kitchen1: ["🍳 <i>Kitchen: </i>", "a", 30],
+  kitchen2: ["🍳 <i>Kitchen (Cookery): </i>", "a", 320],
+  kitchen3: ["🍳 <i>Kitchen (Hearth Hall): </i>", "a", 1250],
+  kitchen4: ["🍳 <i>Kitchen (Culinary Suit): </i>", "a", 3850],
+  library1: ["📚 <i>Library (Personal Collection): </i>", "a", 50],
+  library2: ["📚 <i>Library: </i>", "a", 350],
+  library3: ["📚 <i>Library (Grand Library): </i>", "a", 4300],
   loading: ["📦 <i>Loading Room: </i>", "a", 55],
   machinarium: ["⚙️ <i>Machinarium: </i>", "a", 140],
   menagerie: ["🐾 <i>Menagerie: </i>", "a", 50],
   message: ["📜 <i>Message Room: </i>", "a", 6300],
-  nexus: ["🪄 <i>Nexus: </i>", "a", 6200],
-  orrery: ["🌌 <i>Orrery: </i>", "a", 850],
-  reconnaissance: ["👁️ <i>Reconnaissance Den: </i>", "a", 160],
-  ritual1: ["🕯️ <i>Ritual Chamber: </i>", "a", 200],
-  ritual2: ["🕯️ <i>Ritual Chamber: </i>", "a", 600],
-  ritual3: ["🕯️ <i>Ritual Chamber: </i>", "a", 1200],
-  runeforge: ["🔨 <i>Runeforge: </i>", "a", 5400],
+  necromancer: ["💀 <i>Necromancer's Alcove: </i>", "a", 240],
+  nexus: ["🔮 <i>Nexus: </i>", "a", 240],
+  orrery: ["🌌 <i>Orrery: </i>", "a", 150],
+  reconnaissance: ["👁️ <i>Reconnaissance Den: </i>", "a", 30],
+  ritual1: ["🕯️ <i>Ritual Chamber: </i>", "a", 60],
+  ritual2: ["🕯️ <i>Ritual Chamber: </i>", "a", 680],
+  ritual3: ["🕯️ <i>Ritual Chamber: </i>", "a", 14500],
+  runeforge: ["🔨 <i>Runeforge: </i>", "a", 250],
   saloon: ["🥃 <i>Saloon: </i>", "a", 45],
-  sanctum: ["🔮 <i>Sanctum: </i>", "a", 850],
-  scriptorium: ["✍️ <i>Scriptorium: </i>", "a", 45],
-  scrying: ["👁️‍🗨️ <i>Scrying Room: </i>", "a", 850],
-  shrine1: ["⛪ <i>Shrine Room: </i>", "a", 45],
-  shrine2: ["⛪ <i>Shrine Room: </i>", "a", 300],
-  shrine3: ["⛪ <i>Shrine Room: </i>", "a", 1200],
-  stables: ["🐎 <i>Stables: </i>", "a", 200],
+  sanctum: ["🔮 <i>Sanctum: </i>", "a", 325],
+  scriptorium: ["✍️ <i>Scriptorium: </i>", "a", 145],
+  scrying: ["👁️‍🗨️ <i>Scrying Room: </i>", "a", 820],
+  shrine1: ["⛪ <i>Shrine Room: </i>", "a", 30],
+  shrine2: ["⛪ <i>Shrine Room (Temple): </i>", "a", 450],
+  shrine3: ["⛪ <i>Shrine Room (Cathedral): </i>", "a", 6000],
+  stables: ["🐎 <i>Stables: </i>", "a", 25],
   storefront1: ["🏪 <i>Storefront: </i>", "a", 35],
   storefront2: ["🏪 <i>Storefront (Grand): </i>", "a", 350],
   storefront3: ["🏪 <i>Storefront (Emporium): </i>", "a", 5500],
@@ -165,12 +173,12 @@ const casarooms = {
   tavern: ["🍺 <i>Tavern: </i>", "a", 45],
   teleport: ["🌀 <i>Teleportation Chamber: </i>", "a", 6200],
   torture: ["🩸 <i>Torture Chamber: </i>", "a", 425],
-  tradehall1: ["💱 <i>Trade Hall: </i>", "a", 200],
-  tradehall2: ["💱 <i>Trade Hall: </i>", "a", 1200],
-  training1: ["🏋️ <i>Training Ground: </i>", "a", 200],
-  training2: ["🏋️ <i>Training Ground (Drill Field): </i>", "a", 1200],
-  translocation: ["🚪 <i>Translocation Room: </i>", "a", 6200],
-  trauma: ["🩹 <i>Trauma Ward: </i>", "a", 5400],
+  tradehall1: ["💱 <i>Trade Hall: </i>", "a", 140],
+  tradehall2: ["💱 <i>Trade Hall: </i>", "a", 950],
+  training1: ["🏋️ <i>Training Ground: </i>", "a", 80],
+  training2: ["🏋️ <i>Training Ground (Drill Field): </i>", "a", 870],
+  translocation: ["🚪 <i>Translocation Room: </i>", "a", 440],
+  trauma: ["🩹 <i>Trauma Ward: </i>", "a", 100],
   vault1: ["🔐 <i>Vault: </i>", "a", 70],
   vault2: ["🔐 <i>Vault (Warded): </i>", "a", 5000],
   vault3: ["🔐 <i>Vault (Antimagic): </i>", "a", 28000],
@@ -184,43 +192,40 @@ const casarooms = {
   workshop3: ["🛠️ <i>Workshop (Exquisite): </i>", "a", 5400],
 };
 
-
-
 const casaaccess = {
-  casahall: "🏰 <i>Requisition Advice: </i>",
-  casasanct: "✨ <i>Draw Magic: </i>",
-  focusedmagic: "🔮 <i>Hightened Focus: </i>aaa. <br> 💫 <i>Additional Magic: </i>",
-  alchemist: "⚗️ <i>Plunder Alchemy: </i>aaa <br> 🧪 <i>Alchemist's Preparations: </i>",
-  apothecary: "💊 <i>Plunder Medicine: </i>aaa <br> 🌿 <i>Herbalist's Preparations: </i>",
-  barracks: "🏕️ <i>Shore Leave: </i>",
-  binding: "🔗 <i>Awaken Eidolon: </i>",
-  boundary: "🌍 <i>Wedge Portal: </i> <br> 🌐 <i>Entwine Portal: </i>",
-  brewery: "🍻 <i>Plunder Alcohol: </i> <br> 💉 <i>Plunder Narcotics: </i>",
-  cellar: "🍞 <i>Plunder Food Reserves: </i> <br> 🍖 <i>Plunder Rations: </i>",
-  closet: "👗 <i>Dress for Success: </i> <br> 🕵️‍♀️ <i>Perfect Disguise: </i>",
-  falconry: "🦅 <i>Requisition Falcon: </i>",
-  gatehouse: "🛡️ <i>Hardened Wills: </i>",
-  curiosities: "🔮 <i>Plunder Talismans: </i> <br> ✨ <i>Talismancer's Preparations: </i>",
-  keep: "🏰 <i>Guardian's Preparations: </i> <br> 🛡️ <i>Prepare Defenses: </i>",
-  kitchen: "🍴 <i>Chef's Preparations: </i>",
-  library: "📚 <i>Library Card: </i> <br> 🧙‍♂️ <i>Spellcaster's Preparations: </i>",
-  loading: "💣 <i>Plunder Ammunition: </i> <br> 💥 <i>Plunder Explosives: </i>",
-  machinarium: "⚙️ <i>Plunder Doohickeys: </i> <br> 🛠️ <i>Inventor's Preparations: </i>",
-  menagerie: "🐾 <i>Pamper Menagerie: </i>",
-  message: "📜 <i>Spread Ahead: </i>",
-  necromancer: "⚰️ <i>Study the Grave: </i>",
-  nexus: "🪄 <i>Wand Recalibration: </i> <br> 🌟 <i>Staff Attunement: </i>",
-  orrery: "🌌 <i>Otherworldy Empowerment: </i>",
-  runeforge: "🔨 <i>Runesmith Preparations: </i>",
-  sanctum: "🔮 <i>Bolster Familiar: </i>",
-  scriptorium: "📜 <i>Plunder Scrolls: </i> <br> ✍️ <i>Scribe's Preparations: </i>",
-  shrine: "⛪ <i>Plunder Water: </i> <br> 💧 <i>Boon of Favor: </i>",
-  stables: "🐎 <i>Companion Speed: </i>",
-  training: "⚔️ <i>Skirmish Preparation: </i> <br> 🏋️‍♂️ <i>Train Companions: </i> <br> 🥋 <i>Fighter's Preparations: </i>",
-  venarium: "☠️ <i>Plunder Poisons: </i> <br> 🧪 <i>Poisoner's Preparations: </i>",
-  war: "🔰 <i>Commander's Preparations: </i>",
+  casahall: "🏰 <i>Requisition Advice (Guild Hall): </i>Você se torna treinado em uma perícia de Lore e recebe +2 de status em testes de Lore.",
+  casasanct: "✨ <i>Draw Magic (Sanctuary): </i>Selecione uma magia da tradição da casa com o rank menor ou igual metade do nível da casa -1. Você pode conjurar essa magia uma vez usando a CD da casa ou a sua CD de magia, o que for maior.",
+  focusedmagic: "🔮 <i>Hightened Focus (Focused Magic): </i>Recebe 1 ponto de foco temporário. <br> 💫 <i>Additional Magic (Focused Magic): </i>Selecione uma magia que tenha no repertório ou que consiga preparar. Você pode conjurar essa magia uma vez como uma magia 3 ranks menor que o seu maior rank.",
+  alchemist: "⚗️ <i>Plunder Alchemy (Alchemist's Laboratory): </i>Recebe 1 consumível alquímico, 2 se for um Alchemist ou possuir a dedicação de Alchemist, ou o dobro caso seja um Alchemist's Laboratory (Sophisticated). <br> 🧪 <i>Alchemist's Preparations (Alchemist's Laboratory): </i>Se for um alquimista, aumenta a quantidade de versatile vials que você cria no começo do dia em 1.",
+  apothecary: "💊 <i>Plunder Medicine (Apothecary): </i>Recebe 2 alquímicos com o traço healing, ou o dobro se for um Apothecary (Grand). <br> 🌿 <i>Herbalist's Preparations (Apothecary): </i>Se for um Herbalist, aumenta o número de itens que você produz no começo do dia em 1.",
+  barracks: "🏕️ <i>Shore Leave (Barracks): </i>Se possuir o feat Crew Leader, a sua Crew recebe +1 de status em ataques, CA, testes de resistência e perícia.",
+  binding: "🔗 <i>Awaken Eidolon (Binding Chamber): </i>Se possuir um Eidolon, ele recebe um evolution feat de nível igual ou menor o nível da casa.",
+  boundary: "🌍 <i>Wedge Portal (Boundary Chamber): </i>Se possuir uma Kinetic Aura, recebe um feat de impulso de um elemento que você possua (apenas um elemento) e que seja de nível igual ou menor que a metade do nível da casa. <br> 🌐 <i>Entwine Portal (Boundary Chamber): </i>Se possuir uma Kinetic Aura, recebe um feat de impulso composto que possua pelo menos um elemento que você possua, de nível igual ou menor que a metade do nível da casa.",
+  brewery: "🍻 <i>Plunder Alcohol (Brewery): </i>Recebe o equivalente a 20 garrafas de álcool, ou o dobro caso seja uma Brewery (Destilety). <br> 💉 <i>Plunder Narcotics (Brewery): </i>Recebe 2 drogas alquímicas, ou o dobro caso seja uma Brewery (Destilery).",
+  cellar: "🍞 <i>Plunder Food Reserves (Cellar): </i>Recebe 2 comidas alquímicas ou morsels mágicos comuns, ou 3 se a casa tem uma Kitchen (Hearth Hall) ou (Culinary Suit). <br> 🍖 <i>Plunder Rations (Cellar): </i>Recebe 7 Journeybread",
+  closet: "👗 <i>Dress for Success (Closet): </i>Você recebe +1 de item em Diplomacia, Enganação, Intimidação e Performance ao vestir roupas boas do seu closet. <br> 🕵️‍♀️ <i>Perfect Disguise (Closet): </i>Declare que você quer imitar as roupas de alguém. Pode ser uma criatura específica ou um grupo genérico. Você ganha +2 de item em Enganação se usar essas roupas em um teste de Impersonate para a criatura ou grupo escolhido. O tempo para preparar o disfarce é cortado pela metade.",
+  falconry: "🦅 <i>Requisition Falcon (Falconry Tower): </i>Recebe os benefícios do feat Pet, ganhando um Falcão com as habilidades Flier e Fast Movement.",
+  gatehouse: "🛡️ <i>Hardened Wills (Gatehouse): </i>Selecione uma tropa alojada em um dos quartos da casa. Essa tropa recebe +2 de status em Vontade pra Resist Routing.",
+  curiosities: "🔮 <i>Plunder Talismans (Hall of Curiosities): </i>Recebe 1 talismã comum, ou 2 caso seja um Thaumaturgo ou tenha a dedicação de Thaumaturgo. <br> ✨ <i>Talismancer's Preparations (Hall of Curiosities): </i>Se possuir a habilidade de criar talismãs no começo do dia, aumente o número de talismãs que você cria em 1.",
+  keep: "🏰 <i>Guardian's Preparations (Keep): </i>Se for um Guardian, você recebe o feat Bodyguard. Caso já possua esse feat, pode selecionar uma pessoa para proteger com esse feat a mais. <br> 🛡️ <i>Prepare Defenses (Keep): </i>Se a casa entrar em cerco, ela recupera um Ponto de Defesa por dia automaticamente.",
+  kitchen: "🍴 <i>Chef's Preparations (Kitchen): </i>Se for um Wandering Chef, aumenta o número de Versatile Vials e Morning Side Dishes no começo do dia em 1.",
+  library: "📚 <i>Library Card (Library): </i>Ganha um cartão que permite conjurar Pocket Library por três ações uma vez, de rank 1, 3 ou 6 dependendo da versão da Library. <br> 🧙‍♂️ <i>Spellcaster's Preparations (Library): </i>Você pode preparar um cantrip adicional.",
+  loading: "💣 <i>Plunder Ammunition (Loading Room): </i>Recebe 8 peças de munição alquímica comum, ou 12 se tiver uma Workshop (Exquisite) na casa. <br> 💥 <i>Plunder Explosives (Loading Room): </i>Recebe 2 bombas alquímicas comuns, ou 3 se tiver uma Workshop (Exquisite) na casa.",
+  machinarium: "⚙️ <i>Plunder Doohickeys (Machinarium): </i>Recebe 2 gadgets comuns ou incomuns, 3 se tiver uma Workshop (Exquisite) na casa. <br> 🛠️ <i>Inventor's Preparations (Machinarium): </i>Se for um Inventor, sua inovação recebe uma modificação inicial adicional.",
+  menagerie: "🐾 <i>Pamper Menagerie (Menagerie): </i>Companheiros não inteligentes recebem +1 de status em ataque, CA, testes de resistência e perícia.",
+  message: "📜 <i>Spread Ahead (Message Room): </i>Se for um Field Propagandist, você pode usar Spread Propaganda em um local que esteja na rede de contatos da Message Room, podendo usar Society em vez de Deception no teste, e com um bônus de +2 de circunstância. Pode fazer isso uma vez por mês por localidade.",
+  necromancer: "⚰️ <i>Study the Grave (Necromancer's Alcove): </i>Se for um Necromante, recebe um feat de Necromante adicional que seja de nivel igual metade do nivel da casa ou menor e que conceda uma magia de foco.",
+  nexus: "🔮 <i>Wand Recalibration (Nexus): </i>Selecione uma varinha. A primeira vez que ela for sobrecarregada cada dia, você automaticamente passa no teste pra ela não quebrar. Ela ainda se quebra caso seja sobrecarregada novamente no mesmo dia. <br> 🌟 <i>Staff Attunement (Nexus): </i>Selecione um cajado. Ele recebe 1 carga adicional no começo do dia. Esse número de cargas aumenta para 2, 4 e 6 caso a CD da casa seja Expert, Mestre ou Lendária, respectivamente.",
+  orrery: "🌌 <i>Otherworldy Empowerment (Orrery): </i>Selecione uma magia no seu repertório. Essa magia se torna uma magia de assinatura.",
+  runeforge: "🔨 <i>Runesmith Preparations (Runeforge): </i>Se for um Runesmith, fixa uma runa do seu repertório em algum item compatível no começo do dia, e essa runa não conta no seu limite de runas.",
+  sanctum: "🔮 <i>Bolster Familiar (Sanctum): </i>Seu familiar ganha uma Familiar Ability adicional.",
+  scriptorium: "📜 <i>Plunder Scrolls (Scriptoirum): </i>Recebe 1 pergaminho de rank igual ou menor o bônus concedido pela Library da casa. A magia tem que ser comum, ser uma que você tenha acesso ou que você consiga conjurar. Você precisa ser treinado em pelo menos uma perícia mágica que seja traço da magia. <br> ✍️ <i>Scribe's Preparations (Scriptorium): </i>Se possuir a habilidade de fazer pergaminhos temporários no começo do dia, cria um pergaminho adicional com uma magia 3 ranks menor que o maior rank que você puder fazer.",
+  shrine: "⛪ <i>Plunder Water (Shrine Room): </i>Recebe 2 frascos de Holy Water, Unholy Water ou Blessed Water, dependendo da divindade do templo. Duplica ou triplica a quantidade de frascos se for um Shrine Room (Temple) ou um Shrine Room (Cathedral) respectivamente. <br> 💧 <i>Boon of Favor (Shrine Room): </i>Se seguir éditos e anátemas da sua divindade, recebe +1 de status na perícia da sua divindade ou um Minor Boon, se o mestre permitir.",
+  stables: "🐎 <i>Companion Speed (Stables): </i>Companheiros montaria recebem +5 foot de status no seu deslocamento.",
+  training: "⚔️ <i>Skirmish Preparation (Training Ground): </i>Selecione uma tropa que está alojada em algum quarto da casa. Você ganha um vínculo de tropa enquanto liderar essa tropa. <br> 🏋️‍♂️ <i>Train Companions (Training Ground): </i>Companheiros inteligentes recebem +1 de status em ataque, CA, testes de resistência e de perícia. <br> 🥋 <i>Fighter's Preparations (Training Ground): </i>Se for um Fighter, recebe um poder de Fighter com o traço Flourish, Press ou Stance de nível igual metade do nível da casa ou menor.",
+  venarium: "☠️ <i>Plunder Poisons (Venarium): </i>Recebe 2 venenos alquímicos comuns. Dobra se for um Venarium (Grand). <br> 🧪 <i>Poisoner's Preparations (Venarium): </i>Se for um Poisoner, aumenta o número de venenos que você produz no começo do dia em 1.",
+  war: "🔰 <i>Commander's Preparations (War Room): </i>Aumente o número de taticas que você prepara no dia em 1.",
 }
-
 
 const casarenda = {
   mines: ["⛏️ Bountiful Mines", 0, 1, 2, 3, 5, 7, 14, 17, 21, 28, 35, 42, 56, 70, 105, 140, 196, 210, 315, 420],
@@ -1314,26 +1319,28 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   function atualizarTotal() {
-    let total = 0;
-    const nivel = getNivelCasa();
+  let total = 0;
+  const nivel = getNivelCasa();
 
-    if (nivel) total += casavalores[nivel - 1] ?? 0;
+  if (nivel) total += casavalores[nivel - 1] ?? 0;
 
-    valoresUL.querySelectorAll("li").forEach(li => {
-      const m = li.textContent.match(/(\d+)\s*PO/);
-      if (m) total += Number(m[1]);
-    });
+  valoresUL.querySelectorAll("li").forEach(li => {
+    if (li === liCasa || li === liTotal) return;
 
-    liCasa.innerHTML = nivel
-      ? `🏠 <i>Casa nível ${nivel}: ${casavalores[nivel - 1]} PO</i>`
-      : "🏠 <i>Casa:</i> — PO";
+    const m = li.textContent.match(/(\d+)\s*PO/);
+    if (m) total += Number(m[1]);
+  });
 
-    liTotal.innerHTML = `<br>💰 <i>Total:</i> ${total} PO`;
-  }
+  liCasa.innerHTML = nivel
+    ? `🏠 <i>Casa nível ${nivel}: ${casavalores[nivel - 1]} PO</i>`
+    : "🏠 <i>Casa:</i> — PO";
 
-  Object.keys(casarooms).forEach(id =>
-    safeListener($(`#${id}`), atualizarRooms)
-  );
+  liTotal.innerHTML = `<br>💰 <i>Total:</i> ${total} PO`;
+}
+
+  $$('input[name]').forEach(el =>
+  safeListener(el, atualizarRooms)
+);
 
   $$('input[name="nivel"]').forEach(el =>
     safeListener(el, atualizarTotal)
